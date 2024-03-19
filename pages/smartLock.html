@@ -1,0 +1,65 @@
+<style>
+    body img{
+        margin: 1%;
+    }
+    #img1{
+        width: 100px;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    #img2{
+        width: 35%;
+        height: auto;
+    }
+    #img3{
+        width: 35%;
+        height: auto;
+        border-radius: 1%;
+    }
+    .ExplainZone{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .imgZone{
+        position: center;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    .subtitle{
+        font-size: 0.8rem;
+        font-style: italic;
+    }
+</style>
+<html>
+    <div class="ExplainZone">
+        <div class="ExplainTitle">La serrure connectée</div>
+        <div class="ExplainText">
+            <p>Afin de me familiariser avec les ESP32, j'ai pensé a un projet de serrure connectée pour le garage de mes parents<br>
+            <div class="imgZone">
+                <img id="img1"src="https://www.gotronic.fr/ori-module-nodemcu-esp32-28407.jpg"><br>
+                <a class="subtitle">fig.1 : image d'un ESP32</a>
+            </div>
+            Les ESP32 sont des cartes programmales basées sur l'architecure d'arduino, qui integrent le bluetooth et le wifi<br>
+            Plus précisement cette carte programmable premet l'utilisation du BLE ( <b>B</b>luetooth <b>L</b>ow <b>E</b>nergy)</p>
+            Cela fonctionne a l'opposé du bluetooth classique, qui est une technologie de communication point a point, de connection continue<br>
+            Le BLE lui, ne se connecte que lors d'un échange de données, et se déconnecte ensuite.<br>
+            <div class="imgZone">
+                <img id="img2" src="https://www.lightzoomlumiere.fr/wp-content/uploads/2020/06/Bluetooth-Mesh-3-typologies-Copyright-Damien-Joyeux-Rayflexion.png"><br>
+                <a class="subtitle">fig.2 : Schéma des différentes technologies bluetooth</a>
+            </div>
+            
+            <br>Une fois le moyen trouvé, il me fallait l'implémenter dans mon application, <br>
+            j'ai donc appris que Flutter permettait de se connecter en BLE a une adresse précise, exactement ce qu'il me fallait.<br>
+            J'ai donc utilisé les fonctionnalités android de base, afin de lorsque que l'on shouaite ouvrir la porte<br> on nous demande notre empreimpte digitale, et si elle est bonne, on envoie un signal a l'ESP32, qui ouvre la porte.<br>
+             On notera que l'application n'a jamis acces a l'empreimpte mais uniquement au résultat ( heureusement)<br>
+            <br>
+            <div class="imgZone">
+                <img id="img3" src="/source/images/Projets/expliq/thelock/IMG_20191206_215344 (1).jpg"><br>
+                <a class="subtitle">fig.3 : implémentation de la serrure en réel</a>
+            </div>
+        </div>
+      </div>
+</html>

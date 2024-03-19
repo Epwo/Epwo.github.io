@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #game-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border: 2px solid #000;
+    }
+
+    #box {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      cursor: pointer;
+    }
+
+    .circle {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #e74c3c;
+      border-radius: 50%;
+    }
+    @keyframes fallingAnimation {
+  to {
+    top: calc(100% - 20px); /* Adjust the value based on the circle's size */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<div id="game-container">
+  
+</div>
+
+<script src="source/Script/suikaApp.js"></script>
+</body>
+</html>

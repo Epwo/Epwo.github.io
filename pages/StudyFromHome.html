@@ -1,0 +1,67 @@
+<style>
+    body img{
+        margin: 1%;
+    }
+    #img1{
+        width: 100px;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    #img2{
+        width: 35%;
+        height: auto;
+    }
+    #img3{
+        width: 35%;
+        height: auto;
+        border-radius: 1%;
+    }
+    .ExplainZone{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .imgZone{
+        position: center;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    .subtitle{
+        font-size: 0.8rem;
+        font-style: italic;
+    }
+</style>
+<html>
+    <div class="ExplainZone">
+        <div class="ExplainTitle">Study From Home</div>
+        <div class="ExplainText">
+            <p>Afin d'en apprendre plus sur le Web Scraping et seleniumn (lib python de web scraping), et pour éviter de 
+            rater les cours en distanciel, j'ai décidé de créer une application qui m'envoie un message discord quand le cours commence, et m'y (au passage) m'y connecte directement, afin de m'éviter des retards.<br>
+            <div class="imgZone">
+                <img id="img1"src="https://miro.medium.com/v2/resize:fit:1400/1*HGo7_F7RTHFF9bgVxamGqg.png"><br>
+                <a class="subtitle">fig.1 : logo de selenium</a>
+            </div>
+            Le web Scraping est une technique qui consiste a récupérer des données sur un site web, en utilisant un programme.<br>
+            Cela permet nottamment de récupérer des informations sur un site, sans avoir a utiliser des API.<br>
+            Qui sont une solution plus propre, mais qui ne sont pas toujours disponibles. ou parfois même payantes (reddit, twitter etc..)<br>
+            Et selenium permet également d'intéragir avec le site, en cliquant sur des boutons, en remplissant des formulaires, etc.<br>
+            
+            <div class="imgZone">
+                <img id="img2" src="https://www.lightzoomlumiere.fr/wp-content/uploads/2020/06/Bluetooth-Mesh-3-typologies-Copyright-Damien-Joyeux-Rayflexion.png"><br>
+                <a class="subtitle">fig.2 : Schéma des différentes technologies bluetooth</a>
+            </div>
+            
+            <br>Une fois le moyen trouvé, il me fallait l'implémenter dans mon application, <br>
+            j'ai donc appris que Flutter permettait de se connecter en BLE a une adresse précise, exactement ce qu'il me fallait.<br>
+            J'ai donc utilisé les fonctionnalités android de base, afin de lorsque que l'on shouaite ouvrir la porte<br> on nous demande notre empreimpte digitale, et si elle est bonne, on envoie un signal a l'ESP32, qui ouvre la porte.<br>
+             On notera que l'application n'a jamis acces a l'empreimpte mais uniquement au résultat ( heureusement)<br>
+            <br>
+            <div class="imgZone">
+                <img id="img3" src="/source/images/Projets/expliq/thelock/IMG_20191206_215344 (1).jpg"><br>
+                <a class="subtitle">fig.3 : implémentation de la serrure en réel</a>
+            </div>
+        </div>
+      </div>
+</html>

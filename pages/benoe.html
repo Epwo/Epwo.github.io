@@ -1,0 +1,57 @@
+<style>
+    body img{
+        margin: 1%;
+    }
+    #flutterImg{
+        width: 100px;
+        height: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    #screenImg{
+        width: 10%;
+        height: auto;
+    }
+    .ExplainZone{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .imgZone{
+        position: center;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    .subtitle{
+        font-size: 0.8rem;
+        font-style: italic;
+    }
+</style>
+<html>
+    <div class="ExplainZone">
+        <div class="ExplainTitle">BeNoe</div>
+        <div class="ExplainText">
+            <p>Mon ami noé étant un peu narcissique, j'ai eu l'idée de faire une application pour m'entrainer avec Flutter.<br>
+            <div class="imgZone">
+                <img id="flutterImg"src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Google-flutter-logo.svg/2560px-Google-flutter-logo.svg.png"><br>
+                <a class="subtitle">fig.1 : logo de flutter</a>
+            </div>
+            (flutter est un logiciel qui permet le dévloppement d'appli mobiles sur plusieurs plateforme a la fois, un peu comme react, ou swift dans une certaine mesure)<br>
+            Ainsi, j'ai dans un premier temps appris a faire du "front" sur flutter afin d'avoir une interface ressemblante a l'appli BeReal ( la vraie) : </p>
+            <div class="imgZone">
+                <img id="screenImg" src="/source/images/Projets/expliq/benoe/benoeScreen.png"><br>
+                <a class="subtitle">fig.2 : Capture d'écran de BeNoé</a>
+            </div>
+       
+            <br>Une fois cela fait, il me fallait concevoir la partie "invisible", le "back" j'ai donc opté pour une méthode peu orthodoxe mais simpliste m'évitant de nombreux bugs.<br>
+            J'ai choisi de creer, sur mon serveur, un dossier particulier qui allait contenir toutes les images. Ces meme images qui allait toutes avoir le même nom qui variait en fonction du jour.<br>
+            Ainsi, l'application, en fonction du jour, allait chercher l'image correspondante sur le serveur et l'afficher.<br>
+            Cependant, j'ai dérivé de l'application originelle de BeReal sur deux points. Je n'ai pas mis en place de systeme de notification, car je n'avais pas les compétences pour.<br>
+            Et aussi, l'heure a laquelle la nouvelle image apparaissait n'était pas alétoire, mais constante. Ainsi a 12h10, l'image du jour apparaissait.<br>
+            J'ai utilisé ainsi le Temps UNIX, qui est le nombre de secondes écoulées depuis le 1er janvier 1970, pour faire en sorte que l'image change a 12h10.<br>
+            l'application calculait le temps qui passait en UNIX, et quand celui ci modulo un nombre défini (nombre de secondes en une journée) tombait enfin pile, c'est qu'il était l'heure de la nouvelle image !.<br>
+            <br>
+        </div>
+      </div>
+</html>
